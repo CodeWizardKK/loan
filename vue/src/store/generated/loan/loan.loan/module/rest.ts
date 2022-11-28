@@ -25,6 +25,8 @@ export type LoanMsgApproveLoanResponse = object;
 
 export type LoanMsgLiquidateLoanResponse = object;
 
+export type LoanMsgRepayLoanResponse = object;
+
 export type LoanMsgRequestLoanResponse = object;
 
 /**
