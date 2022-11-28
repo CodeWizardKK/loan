@@ -35,7 +35,7 @@ func (k msgServer) RequestLoan(goCtx context.Context, msg *types.MsgRequestLoan)
 		panic(err)
 	}
 
-	//モジュールアカウントにトークンを送信する
+	//モジュールアカウントに担保を送る
 	sdkError := k.bankKeeper.SendCoinsFromAccountToModule(ctx, borrower, types.ModuleName, collateral)
 	if sdkError != nil {
 		return nil, sdkError
